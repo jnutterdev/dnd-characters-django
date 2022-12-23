@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('characters/', include('character_create.urls')),
     path('api-auth/', include('rest_framework.urls')),
+    path('dj-rest-auth/', include('dj_rest_auth.urls')),
 ]
 
 if settings.DEBUG:
